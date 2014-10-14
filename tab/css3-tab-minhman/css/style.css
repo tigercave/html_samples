@@ -15,6 +15,7 @@
 	display: block;
 	float: left;
 	position: relative;
+	margin: 0;
 	padding: 10px 30px;
 	line-height: 1.5em;
 	min-width: 50px;
@@ -44,6 +45,7 @@
 	background: #fff;
 	left: 0;
 	bottom: -5px;
+	z-index: 10;
 }
 
 .clear-shadow {
@@ -54,10 +56,13 @@
 	position: relative;
 	width: 100%;
 	z-index: 5 !important;
+	padding: 0;
+	margin: 0;
 }
 
 .content div {
 	position: absolute;
+	overflow: hidden;
 	top: 0;
 	left: 0;
 	opacity: 0;
@@ -96,6 +101,6 @@
 .tabs input.tab-selector-3:checked ~ .content .content-3,
 .tabs input.tab-selector-4:checked ~ .content .content-4 {
 	opacity: 1;
-	z-index: 6 !important;
+	z-index: 4 !important;
 }
 

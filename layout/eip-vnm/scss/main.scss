@@ -1,0 +1,253 @@
+$box-border: #919191;
+
+@mixin box-border() {
+	border: 1px solid $box-border;
+}
+
+@mixin transition($value) {
+	-ms-transition: $value;	
+	-o-transition: $value;	
+	-webkit-transition: $value;	
+	-moz-transition: $value;	
+	transition: $value;	
+}
+
+/*----- header -----*/
+header#header {
+	&:before {
+		content: '';
+		display: block;
+		height: 5px;
+		background: #ff6200;
+	}
+
+	a.logo {
+		display: block;
+		width: 100%;
+		padding: 10px 0 10px 15px;
+	}
+
+	div.greeting {
+		text-align: right;
+		line-height: 16px;
+		padding: 10px 30px;
+		span {
+			font-size: 14px;
+			font-weight: 600;
+			color: #14cc69;
+			span {
+				color: #ff6200;
+			}
+		}
+	}
+}
+
+/*----- main nav -----*/
+
+nav#main-nav {
+	padding: 0 5px;
+	div.row {
+		padding: 0 5px;
+		div {
+			padding: 5px;
+			text-align: center;
+			a {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				@include box-border();
+
+				&.togger {
+					background: #23ffc7;
+				}
+
+				&.game {
+					background: #ff6300;
+				}
+
+				&.music {
+					background: #ffa500;
+				}
+
+				&.video {
+					background: #14cc69;
+				}
+
+				&.picture {
+					background: #ffa500;
+				}
+
+				&.search {
+					background: #23ffc7;
+				}
+			}
+		}
+	}
+}
+
+/*----- tabs -----*/
+
+.product-tabbed {
+	position: relative;
+
+	input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+
+		&:checked {
+			&+div {
+				label {
+					background: #23ffc7;
+				}
+			}
+		}
+	}
+
+	header {
+		div {
+			h3 {
+				line-height: 14px;
+				font-size: 16px;
+				font-weight: bold;
+				font-family: Bebas, Arial, sans-serif;
+				padding: 5px;
+				color: #000;
+				text-transform: uppercase;
+				background: #ff6300;
+				@include box-border();
+			}
+		}
+	}
+
+	.tabs-label {
+		div {
+			padding: 0 5px;
+			display: inline-block;
+
+			
+
+			div {
+				float: left;
+				width: 20%;
+				text-align: center;
+				padding: 5px;
+
+				label {
+					cursor: pointer;
+					background: #cdcdcd;
+					display: block;
+					width: 100%;
+					@include box-border();
+					font-size: 12px;
+					font-weight: normal;
+					color: #000;
+					@include transition(all 0.3s);
+					img {
+						padding: 5px 10px 0px;
+						margin: 0 auto;
+						max-height: 25px;
+					}
+
+					&:hover {
+						background: #23ffc7;
+					}
+				}
+				
+			}
+		}
+	}
+
+	.tabs-content {
+		position: relative;
+		&>div {
+			display: none;
+			@include transition(display 0.3s);
+			.product-items {
+				.product-item {
+					a {
+						text-decoration: none;
+						position: relative;
+						border: 1px solid #bfbfbf;
+						border-bottom: none;
+						display: block;
+						height: 91px;
+						padding: 3px;
+
+						.postImg {
+							position: absolute;
+							top: 3px;
+							left: 3px;
+							img {
+								width: 85px;
+							}
+						}
+
+						.postDesc {
+							padding-left: 91px;
+
+							h3 {
+								font-size: 15px;
+								font-weight: bold;
+								color: #000;
+								line-height: 15px;
+								margin: 8px 0;
+							}
+
+							p {
+								color: #ff6200;
+								font-weight: bolder;
+								font-size: 15px;
+								margin: 0 0 5px;
+							}
+
+							ul {
+								list-style: none;
+								margin: 0;
+								padding: 0;
+								li {
+									display: inline-block;
+									width: 40%;
+									padding-left: 35px;
+									font-size: 13px;
+									color: #8d8d8d;
+									outline: none;
+									cursor: pointer;
+									&.view {
+										background: url('../image/view.png') no-repeat center left;
+										background-size: 30px;
+									}
+
+									&.download {
+										background: url('../image/download1.png') no-repeat center left;
+										background-size: 25px;
+									}
+								}
+							}
+						}
+					}
+
+					&:last-child {
+						a {
+							border-bottom: 1px solid #bfbfbf;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
+@for $i from 1 through 10 {
+	.product-tabbed input.tab-selector-#{$i}:checked {
+		&~.tabs-label div div label.tab-label-#{$i} {
+			background: #23ffc7;
+		}
+
+		&~.tabs-content .content-#{$i} {
+			display: block;
+		}
+	}
+}

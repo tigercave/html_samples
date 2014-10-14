@@ -23,29 +23,17 @@
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-		<style type="text/css">
-			#main-nav {
-				text-align: center;
-			}
-
-			#main-nav a {
-				display: block;
-				width: 100%;
-				border: 1px solid red;
-			}
-		</style>
 	</head>
 	<body>
 		<div class="container">
 			<header id="header">
 				<div class="row">
 					<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-						<a href="#" class="logo"><img class="img-responsive" src="image/logo.png"/></a>
+						<a href="#" class="logo"><img class="img-responsive" src="image/logo.png"/></a>	
 					</div>
 
 					<div class="col-xs-8 col-sm-9 col-md-9 col-lg-9 greeting">
-						<span>Xin chao <span>0927733776</span></span>
+						<span>Xin chào <span>0927733776</span></span>
 						
 					</div>
 				</div>
@@ -54,7 +42,7 @@
 			<nav id="main-nav">
 				<div class="row">
 					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-						<a id="togger" href="#"><img class="img-responsive" src="image/menu.png"/></a>
+						<a class ="togger" href="#"><img class="img-responsive" src="image/menu.png"/></a>
 					</div>
 					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 						<a class="game" href="#"><img class="img-responsive" src="image/controller.png"/></a>
@@ -111,34 +99,515 @@
 				</div>
 			</section>
 			<section class="product-tabbed">
-				<header>
-					<h3>TOP</h3>
+				<header class="row">
+					<div class="col-xs-12 col-ms-8 col-md-6 col-lg-4">
+						<h3>TOP</h3>
+					</div>
 				</header>
+				<input id="hot-tab-1" type="radio" name="product-tabs" class="tab-selector-1" checked="checked"/>
+				<input id="hot-tab-2" type="radio" name="product-tabs" class="tab-selector-2"/>
+				<input id="hot-tab-3" type="radio" name="product-tabs" class="tab-selector-3"/>
+				<input id="hot-tab-4" type="radio" name="product-tabs" class="tab-selector-4"/>
+				<input id="hot-tab-5" type="radio" name="product-tabs" class="tab-selector-5"/>
 
-				<!-- Nav tabs -->
-				<div class="row">
-					<div class="col-xs-12">
-						<ul class="nav nav-tabs text-center" role="tablist" style="width: 100%; margin: 0 auto;">
-						  <li class="active"><a href="#home" role="tab" data-toggle="tab"><img class="img-responsive" src="image/controller.png"/>Game</a></li>
-						  <li><a href="#profile" role="tab" data-toggle="tab"><img class="img-responsive" src="image/music.png"/>Music</a></li>
-						  <li><a href="#messages" role="tab" data-toggle="tab"><img class="img-responsive" src="image/video.png"/>Video</a></li>
-						  <li><a href="#settings" role="tab" data-toggle="tab"><img class="img-responsive" src="image/picture.png"/>Picture</a></li>
-						</ul>
+				<div class="tabs-label row">
+					<div class="col-xs-10 col-xs-offset-1">
+						
+						<div>
+							<label for="hot-tab-1" class="tab-label-1">
+								<img class="img-responsive" src="image/controller1.png"/>
+								<span>Game</span>
+							</label>
+						</div>
+
+						
+
+						<div>
+							<label for="hot-tab-2" class="tab-label-2">
+								<img class="img-responsive" src="image/music.png"/>
+								<span>Music</span>
+							</label>
+						</div>
+
+						
+						<div>
+							<label for="hot-tab-3" class="tab-label-3">
+								<img class="img-responsive" src="image/video.png"/>
+								<span>Video</span>
+							</label>
+						</div>
+
+						
+						<div>
+							<label for="hot-tab-4" class="tab-label-4">
+								<img class="img-responsive" src="image/picture.png"/>
+								<span>Picture</span>
+							</label>
+						</div>
+
+						
+						<div>
+							<label for="hot-tab-5" class="tab-label-5">
+								<img class="img-responsive" src="image/information.png"/>
+								<span>New</span>
+							</label>
+						</div>
 					</div>
 				</div>
 				
 
 				<!-- Tab panes -->
-				<div class="tab-content">
-				  <div class="tab-pane active" id="home">
-				  Home
-				  </div>
-				  <div class="tab-pane" id="profile">Music</div>
-				  <div class="tab-pane" id="messages">...</div>
-				  <div class="tab-pane" id="settings">...</div>
-				</div>
+				<div class="tabs-content">
 
+					<div class="content-1">
+
+						<div class="product-items row">
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" class="img-responsive" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-2">
+						<div class="product-items row">
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man (Music)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Music)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Music)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Music)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Music)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-3">
+						<div class="product-items row">
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Video)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Video)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Video)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Video)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Video) </h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-4">
+						<div class="product-items row">
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man (Picture)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Picture)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Picture)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Picture)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(Picture)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-5">
+						<div class="product-items row">
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(New)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(New)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(New)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(New)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xs-12 product-item clearfix">
+								<a href="#">
+									<div class="postImg">
+										<img src="image/spider.jpg" alt="Spider Man" />
+									</div>
+
+									<div class="postDesc">
+										<h3>Spider Man(New)</h3>
+										<p>15.000 VND</p>
+										<ul>
+											<li class="view">245</li>
+											<li class="download">45</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
+
+			
 
 			<footer>
 				<span>Copyright 2014 © <a href="http://www.vietnamobile.com.vn">Vietnamobile</a> . Allright service</span>
