@@ -52,6 +52,7 @@ nav#main-nav {
 			padding: 5px;
 			text-align: center;
 			a {
+				outline: none;
 				display: block;
 				width: 100%;
 				margin: 0 auto;
@@ -109,7 +110,7 @@ nav#main-nav {
 		div {
 			h3 {
 				line-height: 14px;
-				font-size: 16px;
+				font-size: 14px;
 				font-weight: bold;
 				font-family: Bebas, Arial, sans-serif;
 				padding: 5px;
@@ -125,9 +126,6 @@ nav#main-nav {
 		div {
 			padding: 0 5px;
 			display: inline-block;
-
-			
-
 			div {
 				float: left;
 				width: 20%;
@@ -163,10 +161,10 @@ nav#main-nav {
 		position: relative;
 		&>div {
 			display: none;
-			@include transition(display 0.3s);
 			.product-items {
 				.product-item {
 					a {
+						@include transition(all 0.3s);
 						text-decoration: none;
 						position: relative;
 						border: 1px solid #bfbfbf;
@@ -174,6 +172,7 @@ nav#main-nav {
 						display: block;
 						height: 91px;
 						padding: 3px;
+						outline: none;
 
 						.postImg {
 							position: absolute;
@@ -248,6 +247,31 @@ nav#main-nav {
 
 		&~.tabs-content .content-#{$i} {
 			display: block;
+		}
+	}
+}
+
+
+/* ---- footer -----*/
+footer#footer {
+	margin-top: 10px;
+	height: 80px;
+	border: 1px solid #919191;
+	border-bottom: none;
+	background: #14cc69;
+	text-align: center;
+	span {
+		font-family: Bebas, Arial, sans-serif;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 80px;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+		color: #000;
+		a {
+			color: #ff6300;
+			text-decoration: none;
+			outline: none;
 		}
 	}
 }
