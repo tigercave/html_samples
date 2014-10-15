@@ -12,6 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/jquery.sidr.dark.css"> -->
+		
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -23,6 +25,8 @@
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<!-- Sidr Menu -->
+		<script src="js/jquery.sidr.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -42,7 +46,7 @@
 			<nav id="main-nav">
 				<div class="row">
 					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-						<a class ="togger" href="#"><img class="img-responsive" src="image/menu.png"/></a>
+						<a id="nav-trigger" class ="togger" href="#"><img class="img-responsive" src="image/menu.png"/></a>
 					</div>
 					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 						<a class="game" href="#"><img class="img-responsive" src="image/controller.png"/></a>
@@ -57,7 +61,7 @@
 						<a class="picture" href="#"><img class="img-responsive" src="image/picture.png"/></a>
 					</div>
 					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-						<a class="search" href="#"><img class="img-responsive" src="image/search.png"/></a>
+						<a id="search-trigger" class="search" href="#"><img class="img-responsive" src="image/search.png"/></a>
 					</div>
 				</div>
 			</nav>
@@ -1116,11 +1120,63 @@
 				</div>
 			</section>
 
-			
-
 			<footer id="footer">
 				<span>© 2014 <a href="http://www.vietnamobile.com.vn">Vietnamobile</a> . Allright service</span>
 			</footer>
-		</div>
+
+			<nav id="nav-panel">
+				<h1>Danh mục sản phẩm</h1>
+				<ul>
+					<li class="sub current"><a href="#">Game</a>
+						<ul>
+							<li><a href="#">Hành động</a></li>
+							<li><a href="#">Chiến thuật</a></li>
+							<li><a href="#">Xếp hình</a></li>
+							<li><a href="#">Meet'nFuck</a></li>
+						</ul>
+					</li>
+					<li class="sub"><a href="#">Nhạc</a>
+						<ul>
+							<li><a href="#">KPop</a></li>
+							<li><a href="#">Rock</a></li>
+							<li><a href="#">Opera</a></li>
+							<li><a href="#">Dân ca cổ truyền</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Video - Clip</a></li>
+					<li class="sub"><a href="#">Ảnh đẹp</a>
+						<ul>
+							<li><a href="#">Hotgirl</a></li>
+							<li><a href="#">Người đẹp nước ngoài</a></li>
+							<li><a href="#">Sexy</a></li>
+							<li><a href="#">Thien nhiên</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Tin Tức</a></li>
+				</ul>
+			</nav>
+
+			<section id="search-panel">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+
+			<script>
+				$(document).ready(function() {
+					$('a#nav-trigger').sidr({
+						name: 'nav-panel'
+					});
+
+					$('a#search-trigger').sidr({
+						name: 'search-panel',
+						side: 'right'
+					});
+				});
+			</script>
+		</div><!-- end div.container -->
 	</body>
 </html>

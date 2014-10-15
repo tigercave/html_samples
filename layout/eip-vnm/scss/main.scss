@@ -1,16 +1,5 @@
-$box-border: #919191;
-
-@mixin box-border() {
-	border: 1px solid $box-border;
-}
-
-@mixin transition($value) {
-	-ms-transition: $value;	
-	-o-transition: $value;	
-	-webkit-transition: $value;	
-	-moz-transition: $value;	
-	transition: $value;	
-}
+@import "_vars.scss";
+@import "_mixin.scss";
 
 /*----- header -----*/
 header#header {
@@ -56,7 +45,7 @@ nav#main-nav {
 				display: block;
 				width: 100%;
 				margin: 0 auto;
-				@include box-border();
+				border: 1px solid $box-border;
 
 				&.togger {
 					background: #23ffc7;
@@ -117,7 +106,7 @@ nav#main-nav {
 				color: #000;
 				text-transform: uppercase;
 				background: #ff6300;
-				@include box-border();
+				border: 1px solid $box-border;
 			}
 		}
 	}
@@ -137,7 +126,7 @@ nav#main-nav {
 					background: #cdcdcd;
 					display: block;
 					width: 100%;
-					@include box-border();
+					border: 1px solid $box-border;
 					font-size: 12px;
 					font-weight: normal;
 					color: #000;
