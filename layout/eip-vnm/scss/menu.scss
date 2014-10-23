@@ -85,7 +85,7 @@ nav#nav-panel {
 
 			&.current {
 				ul {
-					display: block;
+					display: block;;
 				}
 			}
 		}
@@ -94,3 +94,25 @@ nav#nav-panel {
 
 
 /*-- (Right) Search Panel--*/
+
+section#search-panel {
+	background: white;
+	border-left: 1px solid #9b9b9b;
+
+	h1 {
+		background: #d7d7d7;
+		text-align: center;
+		border-bottom: 1px solid #9b9b9b;
+		font-size: 16px;
+		font-weight: bold;
+		margin: 0;
+		color: #212121;
+		text-transform: uppercase;
+		// text-shadow: 1px 0 2px rgba(0,0,0, 0.5);
+		line-height: 80px;
+	}
+
+	&>div {
+		margin: 10px;
+	}
+}

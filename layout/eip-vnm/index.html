@@ -27,6 +27,8 @@
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<!-- Sidr Menu -->
 		<script src="js/jquery.sidr.min.js"></script>
+
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -1157,26 +1159,27 @@
 			</nav>
 
 			<section id="search-panel">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<h1>Tìm kiếm</h1>
+				<div>
+					<form role="form">
+						<div class="form-group">
+							<select class="form-control">
+								<option value="game">Game</option>
+								<option value="music">Nhạc</option>
+								<option value="video">Video - Clip</option>
+								<option value="picture">Ảnh</option>
+							</select>
+						</div>
+						<div class="form-group">
+					    	<input type="search" class="form-control" id="inputPassword3" placeholder="Nhập từ khóa ...">
+					 	</div>
+
+					 	<div class="form-group">
+					    	<button type="button" class="btn btn-primary">Tìm kiếm</button>
+					 	</div>
+					</form>
+				</div>
 			</section>
-
-			<script>
-				$(document).ready(function() {
-					$('a#nav-trigger').sidr({
-						name: 'nav-panel'
-					});
-
-					$('a#search-trigger').sidr({
-						name: 'search-panel',
-						side: 'right'
-					});
-				});
-			</script>
 		</div><!-- end div.container -->
 	</body>
 </html>

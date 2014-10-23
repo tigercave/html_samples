@@ -69,5 +69,20 @@ nav#nav-panel {
         display: block; }
 
 /*-- (Right) Search Panel--*/
+section#search-panel {
+  background: white;
+  border-left: 1px solid #9b9b9b; }
+  section#search-panel h1 {
+    background: #d7d7d7;
+    text-align: center;
+    border-bottom: 1px solid #9b9b9b;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: #212121;
+    text-transform: uppercase;
+    line-height: 80px; }
+  section#search-panel > div {
+    margin: 10px; }
 
 /*# sourceMappingURL=menu.css.map */
