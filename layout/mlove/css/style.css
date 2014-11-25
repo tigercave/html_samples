@@ -1,0 +1,139 @@
+#container {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* header */
+#header {
+	background-color: #3095B2;
+	width: 100%;
+	border-bottom: 1px solid #206579;
+	margin-bottom: 10px;
+}
+
+#header ul {
+	list-style: none;
+}
+
+#header ul li {
+	float: left;
+}
+
+#header .inforbar {
+	border-bottom: 1px solid #206579;
+}
+
+#header div.social-icons {
+	text-align: center;
+}
+
+#header div.social-icons ul {
+	display: block;
+	margin: 0 auto;
+}
+
+#header div.social-icons a {
+	color: #1f6376;
+	padding: 3px;
+	font-size: 35px;
+	line-height: 50px;
+	-moz-transition: all 0.1s linear;
+	-webkit-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+#header div.social-icons a:hover {
+	color: #3ec9f1;	
+}
+
+#header .header {
+	border-top: 1px solid #3bb3d6;
+}
+
+#header .logo {
+	text-align: center;
+	line-height: 80px;
+	font-size: 45px;
+	font-weight: bolder;
+	color: #FF77A0;
+	/*text-shadow: 0 0 2px rgba(0,0,0,.8);*/
+}
+
+#header ul {
+	padding: 0;
+}
+
+#header .header a {
+	color: #4c4c4c;
+	font-size: 16px;
+	text-decoration: none;
+	display: block;
+	line-height: 78px;
+	padding-left: 10px;
+	padding-right: 10px;
+	/*text-shadow: 0 0 2px rgba(0,0,0,.8);*/
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	-moz-transition: all 0.1s linear;
+	-webkit-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+#header .header a:after {
+	content: '';
+	display: block;
+	width: 0;
+	position: absolute;
+	z-index: 1000;
+	bottom: 1px	;
+	left: 0;
+	height: 5px;
+	background-color: rgba(255,119, 160, 0.8);
+	-moz-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	display: none;
+}
+
+#header .header a:hover {
+	background-color: #1f5f72;
+	color: #f1f1f1;
+
+}
+
+#header .header a:hover:after {
+	width: 100%;
+	display: block;
+}
+
+#header .search-box {
+	height: 50px;
+	padding-top: 7px;
+}
+
+#header input[type=search] {
+	padding:8px 15px;
+    background:rgba(50, 50, 50, 0.1);
+    border:0px solid #dbdbdb;
+    width: 200px;
+}
+
+#header input[type=submit] {
+	position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #207cca;
+    background-color:#207cca;
+    color:#fafafa;
+}
+
+#header input[type=submit]:hover {
+	background-color:#fafafa;
+                color:#207cca;
+}
